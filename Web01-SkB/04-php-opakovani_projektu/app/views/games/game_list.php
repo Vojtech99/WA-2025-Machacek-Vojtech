@@ -19,24 +19,36 @@ $games = $gameModel->getAll();
 <body class="bg-light">
 
 <div class="container mt-5">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Herní databáze</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="game_create.php">Přidat hru</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game_list.php">Výpis her</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Herní databáze</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../games/game_create.php">Přidat hru</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../games/game_list.php">Výpis her</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../auth/register.php">Registrace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../auth/login.php">Přihlášení</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../games/games_edit_delete.php">Edit a mazání</a>
+                </li>
+                
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <h2>Výpis her</h2>
 
